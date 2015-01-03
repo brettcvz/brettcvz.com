@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 
+# Vim things
+*.swp
+*.swo
+
 # C extensions
 *.so
 
@@ -52,3 +56,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# DB
+*.sqlite3

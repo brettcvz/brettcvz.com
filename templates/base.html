@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="Copyright" content="Brett van Zuiden" />
+        <meta name="keywords" content="Brett van Zuiden, about me, resume, product manager" />
+        <meta name="description" content="" />
+
+        <!-- Favicons -->
+        <!-- TODO -->
+        <link rel="apple-touch-icon" href="/s/img/icon-touch.e4872c4da341.png">
+        <link rel="icon" sizes="192x192" href="/s/img/icon-touch.e4872c4da341.png">
+        <link rel="shortcut icon" href="/s/img/favicon.6dbf28c0650e.ico">
+
+        <title>{%block title%}Brett van Zuiden | Maker, Hobbyist, Optimist{%endblock%}</title>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {%block css%}{%endblock%}
+    </head>
+    <body>
+        {%block body%}{%endblock%}
+        <div id="scripts">
+            <script src="{% static 'js/base.js' %}"></script>
+            {%block js%}{%endblock%}
+        </div>
+    </body>
+</html>
