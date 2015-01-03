@@ -3,40 +3,55 @@
 {%block title%}Brett van Zuiden | Maker, Hobbyist, Optimist{%endblock%}
 
 {%block body%}
-<div class="opener">
-    <img class="headshot" src="http://www.gravatar.com/avatar/3ccacf24c4f98c47c5346f6d09135d9c.png" alt="A picture of me">
-    <p class="intro">
-        Hi, my name is <strong>Brett van Zuiden</strong>. I am a maker, a hobbyist, and an optimist. I live in San Francisco.
-    </p>
-</div>
-<div class="segment" id="about">
-    <h2>About</h2>
-    <div class="details">
-        <img id="timeline" src="{% static 'img/timeline.png'%}" alt="A timeline of my career">
-        <ul id="main-points">
-            <li>Product Manager at <a href="http://ifttt.com">IFTTT</a></li>
-            <li>Founding CEO of <a href="http://filepicker.io">Filepicker.io</a></li>
-            <li>Studied EECS, Math, and Mechanical Engineering at MIT</li>
-        </ul>
-        <a class="more" href="{% url 'about'%}">More about me &rsaquo;</a>
+<div id="content">
+    <div id="opener">
+        <img class="headshot" src="http://www.gravatar.com/avatar/3ccacf24c4f98c47c5346f6d09135d9c.png&s=100" alt="A picture of me">
+        <p id="intro">
+        Hi, my name is <strong>Brett van Zuiden</strong>.
+        <br/>I am a maker, a hobbyist, and an optimist.
+        <br/>I live in San Francisco.
+        </p>
     </div>
-</div>
-<div class="segment" id="posts">
-    <h2>Posts</h2>
-    <div class="details">
-        <ul id="top-posts">
-            <li class="expanded">
-                <h3><a href="#TODO">Strong Opinions, Weakly Held</a></h3>
-                <p>This is body copy that makes up the beginning of the post and goes on for a number
-                of lines, before stopping at <a class="readmore" href="#TODO">Read More &rsaquo;</a></p>
-            </li>
-            <li><h3><a href="#TODO">Where the wild things are &rsaquo;</a></h3></li>
-            <li><h3><a href="#TODO">Designing a personal website &rsaquo;</a></h3></li>
-        </ul>
-        <a class="more" href="{% url 'posts:index'%}">See all posts &rsaquo;</a>
+    <div class="segment" id="about">
+        <h2>About</h2>
+        <div class="details">
+            <!--TODO <img id="timeline" src="{% static 'img/timeline.png'%}" alt="A timeline of my career">-->
+            <ul id="main-points">
+                <li>Product Manager at <a href="http://ifttt.com">IFTTT</a></li>
+                <li>Founding CEO of <a href="http://filepicker.io">Filepicker.io</a></li>
+                <li>Studied EECS, Math, and Mechanical Engineering at MIT</li>
+            </ul>
+            <a class="more" href="{% url 'about'%}">More about me &rsaquo;</a>
+        </div>
     </div>
-</div>
-<div class="segment" id="projects">
-    <h2>Projects</h2>
+    <div class="segment" id="posts">
+        <h2>Posts</h2>
+        <div class="details">
+            <ul id="top-posts">
+                <li class="expanded">
+                    <h3><a href="#TODO">Strong Opinions, Weakly Held</a></h3>
+                    <p>This is body copy that makes up the beginning of the post and goes on for a number
+                    of lines, before stopping at the end of the second line where there is no more text ...</p>
+                </li>
+                <li class="expanded">
+                    <h3><a href="#TODO">Where the wild things are</a></h3>
+                    <p>This is body copy that makes up the beginning of the post and goes on for a number
+                    of lines, before stopping at the end of the second line where there is no more text ...</p>
+                </li>
+                <li class="expanded">
+                    <h3><a href="#TODO">Designing a personal website</a></h3>
+                    <p>This is body copy that makes up the beginning of the post and goes on for a number
+                    of lines, before stopping at the end of the second line where there is no more text ...</p>
+                </li>
+            </ul>
+            <a class="more" href="{% url 'posts:index'%}">See all posts &rsaquo;</a>
+        </div>
+    </div>
+    <!--
+    TODO
+    <div class="segment" id="projects">
+        <h2>Projects</h2>
+    </div>
+    -->
 </div>
 {%endblock%}
