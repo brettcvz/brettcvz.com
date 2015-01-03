@@ -118,3 +118,7 @@ a:hover { color: #0CA5B0; }
     font-size: 18px;
     line-height: 24px
 }
+
+#contact a {
+    font-weight: 400;
+}
