@@ -28,21 +28,14 @@
         <h2><a href="{% url 'posts:index'%}">Posts</a></h2>
         <div class="details">
             <ul id="top-posts">
+                {%for post in top_posts%}
                 <li>
-                    <h3><a href="#TODO">Strong Opinions, Weakly Held</a></h3>
-                    <p>This is body copy that makes up the beginning of the post and goes on for a number
-                    of lines, before stopping at the end of the second line where there is no more text ...</p>
+                    <h3><a href="{{post.get_absolute_url}}">{{post.title}}</a></h3>
+                    <p>
+                    {{post.preview|removetags:"strong p a"|safe|truncatechars:400}} <a class="readmore" href="{{post.get_absolute_url}}">&rsaquo;</a>
+                    </p>
                 </li>
-                <li>
-                    <h3><a href="#TODO">Where the wild things are</a></h3>
-                    <p>This is body copy that makes up the beginning of the post and goes on for a number
-                    of lines, before stopping at the end of the second line where there is no more text ...</p>
-                </li>
-                <li>
-                    <h3><a href="#TODO">Designing a personal website</a></h3>
-                    <p>This is body copy that makes up the beginning of the post and goes on for a number
-                    of lines, before stopping at the end of the second line where there is no more text ...</p>
-                </li>
+                {%endfor%}
             </ul>
             <a class="more" href="{% url 'posts:index'%}">See all posts &rsaquo;</a>
         </div>

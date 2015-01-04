@@ -288,4 +288,7 @@ article p {
     font-weight: 200;
     margin: 5px 0;
 }
+article p a.readmore {
+    font-size: 16px;
+}
 /*ENDBLOCK Posts*/

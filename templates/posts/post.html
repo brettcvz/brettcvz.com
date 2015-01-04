@@ -1,1 +1,8 @@
 {% extends "posts/base.html" %}
+{%block leftpane%}
+<article>
+<h1>{{post.title}}</h1>
+<time class="pubdate" datetime="{{post.pubdate|date:"Y-m-d"}}">{{post.pubdate|date:"F jS, Y"}}</time>
+{{post.content|safe|linebreaks}}
+</article>
+{%endblock%}
