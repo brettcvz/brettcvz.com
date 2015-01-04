@@ -292,3 +292,77 @@ article p a.readmore {
     font-size: 16px;
 }
 /*ENDBLOCK Posts*/
+/*BLOCK About*/
+h1 {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.about-intro p {
+    font-size: 22px;
+}
+
+.about-intro p.motto {
+}
+
+.timeline {
+    vertical-align: top;
+    display:inline-block;
+    width: 50px;
+    margin: 0;
+    margin-right: 45px;
+}
+.timeline-entries {
+    display:inline-block;
+    width: 700px;
+    margin: 0;
+    margin-bottom: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-entries>li {
+    margin: 10px 0;
+}
+
+.timeline-entries>li.large {
+    margin: 30px 0;
+}
+
+.timeline-entries h3 {
+    font-size: 24px;
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+.timeline-entries p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.timeline-entries time{
+    color: #666;
+    font-weight: 400;
+}
+
+.timeline-entries .description{
+    margin: 12px 0 8px;
+}
+.timeline-entries .highlights{
+    list-style: disc;
+    margin: 0 20px;
+    padding: 0;
+}
+
+.timeline-entries .highlights li{
+    font-size: 16px;
+    padding: 3px 0;
+}
+
+.timeline-entries .event p,
+.timeline-entries .span.yc p{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/*ENDBLOCK About*/
