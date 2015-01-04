@@ -5,6 +5,12 @@ html {
     box-sizing: inherit;
 }
 
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -19,17 +25,46 @@ a:hover { color: #0CA5B0; }
     -webkit-animation: fadein 0.75s; /* Safari and Chrome */
 }
 
+p, span, h1, h2, h3, h4, h5, h6, div {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
 @-webkit-keyframes fadein {from { opacity: 0; } to { opacity: 1; }}
 @-moz-keyframes fadein {from { opacity: 0; } to { opacity: 1; }}
 @keyframes fadein {from { opacity: 0; } to { opacity: 1; }}
 
+footer, .push {
+    height: 20px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: #AAA;
+    font-size: 16px;
+}
+
+.wrapper {
+    /*negative margin for footer*/
+    margin: 0 auto -20px;
+    min-height: 100%;
+}
+
+/*BLOCK Homepage*/
 #content {
     width: 800px;
     margin: auto;
 }
 
 #opener {
-    margin: 80px 0;
+    padding: 80px 0;
 }
 
 #opener .headshot {
@@ -59,7 +94,7 @@ a:hover { color: #0CA5B0; }
 
 .segment {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     margin: 40px 0;
 }
 
@@ -90,17 +125,32 @@ a:hover { color: #0CA5B0; }
     list-style: none;
 }
 
+#main-points li {
+    font-weight: 300;
+    margin: 0px 0 5px;
+}
+
+#main-points a {
+    font-weight: 300;
+}
+
 #top-posts h3 {
     margin: 0;
     font-size: 24px;
     font-weight: 400;
 }
 
+#top-posts li {
+    margin-bottom: 25px;
+}
+
 #top-posts p {
-    padding: 5px 20px;
+    padding: 0px 00px;
     margin: 0;
-    font-size: 18px;
     line-height: 24px;
+    font-size: 18px;
+    font-family: 'Neuton', serif;
+    font-weight: 200;
 }
 
 #top-projects li {
@@ -122,3 +172,120 @@ a:hover { color: #0CA5B0; }
 #contact a {
     font-weight: 400;
 }
+/*ENDBLOCK Homepage*/
+
+/*BLOCK Nav*/
+nav {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 400;
+    width: 800px;
+    margin: 0 auto;
+    height: 75px;
+    padding: 20px 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    float: left;
+    margin-right: 10px;
+}
+
+nav .entry {
+    padding-right: 10px;
+    border-right: 1px solid #333;
+}
+
+nav .entry.last {
+    border-right: none;
+}
+
+nav .icon {
+    width: 40px;
+    vertical-align: middle;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 8px;
+}
+/*ENDBLOCK Nav*/
+/*BLOCK Sidepane*/
+.sidepane {
+    width: 185px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 85px;
+    padding: 15px 0;
+}
+
+.sidepane h3 {
+    margin: 5px 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.sidepane h4 {
+    margin: 0;
+}
+
+.sidepane .info {
+    margin: 20px 0;
+    padding: 0;
+    line-height: 24px;
+    font-weight: 300;
+    font-size: 18px;
+    list-style: none;
+}
+
+.sidepane .info li {
+    margin: 10px 0;
+}
+
+.sidepane .info a {
+    font-weight: 300;
+}
+
+/*ENDBLOCK Sidepane*/
+/*BLOCK Posts*/
+.leftpane {
+    width: 525px;
+    display: inline-block;
+}
+.posts-intro {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.posts-intro ol {
+    margin: 0;
+    padding: 0 25px;
+}
+
+.posts-intro li {
+    margin: 5px 0px;
+    font-size: 18px;
+}
+
+article {
+    margin: 40px 0;
+}
+article h2 {
+    margin: 10px 0 5px;
+}
+article time {
+    color: #333; 
+    font-size: 16px;
+}
+article p {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Neuton', serif;
+    font-weight: 200;
+    margin: 5px 0;
+}
+/*ENDBLOCK Posts*/

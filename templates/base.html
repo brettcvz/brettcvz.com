@@ -14,12 +14,17 @@
         <link rel="shortcut icon" href="/s/img/favicon.6dbf28c0650e.ico">
 
         <title>{%block title%}Brett van Zuiden | Maker, Hobbyist, Optimist{%endblock%}</title>
-        <link href='http://fonts.googleapis.com/css?family=Dosis:400,600|Josefin+Sans:300,400,600' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dosis:400,600|Josefin+Sans:300,400,600|Neuton:200,300,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         {%block css%}{%endblock%}
     </head>
     <body>
-        {%block body%}{%endblock%}
+        <div class="wrapper">
+            {%block body%}
+            {%endblock%}
+            <div class="push"></div>
+        </div>
+        <footer>&copy; Brett van Zuiden</footer>
         <div id="scripts">
             <script src="{% static 'js/base.js' %}"></script>
             {%block js%}{%endblock%}
