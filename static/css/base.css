@@ -202,7 +202,7 @@ nav .entry {
     border-right: 1px solid #333;
 }
 
-nav .entry.last {
+nav li:last-child .entry {
     border-right: none;
 }
 
