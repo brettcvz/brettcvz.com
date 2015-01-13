@@ -1,20 +1,24 @@
 {% extends "base.html" %}
 {%block body%}
-{%include "nav.html"%}
 
 <div id="content">
-    <div class="leftpane fadein">
-        {%block leftpane%}
-        {%endblock%}
-    </div>
     <div class="sidepane fadein">
-        <h3>Brett van Zuiden</h3>
-        <h4>Maker, hobbyist, optimist</h4>
+        <h3><a href="{%url 'home'%}">Brett van Zuiden</a></h3>
+        <nav>
+            <a href="{%url 'about'%}">About</a> |
+            <a href="{%url 'posts:index'%}">Posts</a>
+        </nav>
+        {%block sidepane%}
         <ul class="info">
             <li>I work as a Product Manager at <a href="http://ifttt.com">IFTTT</a>.</li>
             <li>I founded <a href="http://filepicker.io">Filepicker.io</a>, part of YC S12.</li>
             <li>Contact me at <a href="mailto:brettcvz@gmail.com">brettcvz@gmail.com</a></li>
         </ul>
+        {%endblock%}
+    </div>
+    <div class="rightpane fadein">
+        {%block contentpane%}
+        {%endblock%}
     </div>
 </div>
 {%endblock%}

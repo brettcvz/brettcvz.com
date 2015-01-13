@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "splitpane.html" %}
 {% load staticfiles %}
 
 {%block title%}Brett van Zuiden | About me{%endblock%}
@@ -7,17 +7,15 @@
 <script src="{% static 'js/about.js' %}"></script>
 {%endblock js%}
 
-{%block body%}
-{%include 'nav.html'%}
-<div id="content">
+{%block contentpane%}
     <div class="about-intro fadein">
         <h1>We can give people superpowers.</h1>
-        <p class="motto">Great products can take someone totally beyond what they thought they could do, which makes creating them so much fun.</p>
+        <p class="motto">Great products can take someone totally beyond what they thought they could do, which is why creating them is so much fun.</p>
         <p>
         Growing up, I dreamed of becoming a "door-to-door inventor" &mdash; I imagined talking to people about the problems they had and then designing devices to solve them. I never quite shook that dream, and am fortunate that my jouney so far as a software engineer, startup founder, and product manager has let me do this at scale.
         </p>
         <p>
-        Outside of work, I cook, dance, perform theater, hack on a number of side projects, and play piano. Here's an overview of my career and life so far:
+        Outside of work, I cook, dance, perform theater, hack on a number of side projects, and play piano. I currently live in San Francisco.
         </p>
     </div>
     <ul class="timeline-entries fadein">
@@ -63,8 +61,12 @@
             </ul>
         </li>
     </ul>
-    <div class="timeline fadein">
-        <svg id="timeline-graphic" width="200" height="900" viewBox="-100 0 200 900"></svg>
-    </div>
+</div>
+{%endblock%}
+
+{%block sidepane%}
+{{block.super}}
+<div class="timeline fadein">
+    <svg id="timeline-graphic" width="200" height="900" viewBox="0 0 200 900"></svg>
 </div>
 {%endblock%}

@@ -1,8 +1,8 @@
-{% extends "posts/base.html" %}
+{% extends "splitpane.html" %}
 
 {%block title%}Brett van Zuiden | {{post.title}}{%endblock%}
 
-{%block leftpane%}
+{%block contentpane%}
 <article>
     <h1>{{post.title}}</h1>
     <time class="pubdate" datetime="{{post.pubdate|date:"Y-m-d"}}">{{post.pubdate|date:"F jS, Y"}}</time>

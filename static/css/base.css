@@ -25,6 +25,10 @@ a:hover { color: #0CA5B0; }
     -webkit-animation: fadein 0.75s; /* Safari and Chrome */
 }
 
+.center {
+    text-align: center;
+}
+
 p, span, h1, h2, h3, h4, h5, h6, div {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
@@ -174,7 +178,7 @@ footer {
 }
 /*ENDBLOCK Homepage*/
 
-/*BLOCK Nav*/
+/*BLOCK Nav
 nav {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
@@ -219,8 +223,16 @@ nav .icon {
     width: 185px;
     display: inline-block;
     vertical-align: top;
-    margin-left: 85px;
+    margin-right: 85px;
     padding: 15px 0;
+    margin-top: 40px;
+}
+
+.sidepane .headshot {
+    border-radius: 50px;
+    width: 75px;
+    height: 75px;
+    margin: auto;
 }
 
 .sidepane h3 {
@@ -252,7 +264,8 @@ nav .icon {
 
 /*ENDBLOCK Sidepane*/
 /*BLOCK Posts*/
-.leftpane {
+.rightpane {
+    margin-top: 40px;
     width: 525px;
     display: inline-block;
 }
@@ -293,7 +306,8 @@ article p a.readmore {
 }
 /*ENDBLOCK Posts*/
 /*BLOCK About*/
-h1 {
+.about-intro h1 {
+    margin-top: 10px;
     font-weight: 400;
     font-size: 36px;
     font-family: 'Dosis', sans-serif;
@@ -314,19 +328,18 @@ h1 {
     display:inline-block;
     width: 200px;
     margin: 0;
-    margin-top: 20px;
-    margin-left: 25px;
+    margin-top: 250px;
 }
 
 .timeline text.year {
     fill: #666;
     font-size: 14px;
-    text-anchor: end;
+    text-anchor: start;
 }
 
 .timeline text.event {
     font-size: 14px;
-    text-anchor: end;
+    text-anchor: start;
 }
 
 .timeline circle.event {

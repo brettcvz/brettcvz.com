@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
     var svg = document.getElementById('timeline-graphic'); //Get svg element
     //100 coords wide
-    var LINE_X = 90.5;
+    var LINE_X = 9.5;
     var START_YEAR = 2011;
     var YEAR_HEIGHT = 200;
     var TOP_PADDING = 10;
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(){
     function createTextElement(coord, text) {
         var node = createElement("text");
         node.setAttribute("class", "event");
-        node.setAttribute("x", LINE_X - 10);
+        node.setAttribute("x", LINE_X + 10);
         node.setAttribute("y", coordToY(coord));
         node.appendChild(document.createTextNode(text));
 
