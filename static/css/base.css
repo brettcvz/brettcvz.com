@@ -296,25 +296,48 @@ article p a.readmore {
 h1 {
     font-weight: 400;
     font-size: 36px;
+    font-family: 'Dosis', sans-serif;
 }
 
 .about-intro p {
     font-size: 22px;
+    line-height: 26px;
 }
 
 .about-intro p.motto {
+    font-size: 28px;
+    line-height: 34px;
 }
 
 .timeline {
     vertical-align: top;
     display:inline-block;
-    width: 50px;
+    width: 200px;
     margin: 0;
-    margin-right: 45px;
+    margin-top: 20px;
+    margin-left: 25px;
 }
+
+.timeline text.year {
+    fill: #666;
+    font-size: 14px;
+    text-anchor: end;
+}
+
+.timeline text.event {
+    font-size: 14px;
+    text-anchor: end;
+}
+
+.timeline circle.event {
+    fill: #FFF;
+    stroke: #000;
+    stroke-width: 1;
+}
+
 .timeline-entries {
     display:inline-block;
-    width: 700px;
+    width: 570px;
     margin: 0;
     margin-bottom: 50px;
     list-style: none;
@@ -322,10 +345,6 @@ h1 {
 }
 
 .timeline-entries>li {
-    margin: 10px 0;
-}
-
-.timeline-entries>li.large {
     margin: 30px 0;
 }
 

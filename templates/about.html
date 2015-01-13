@@ -1,72 +1,40 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {%block title%}Brett van Zuiden | About me{%endblock%}
+
+{%block js%}
+<script src="{% static 'js/about.js' %}"></script>
+{%endblock js%}
 
 {%block body%}
 {%include 'nav.html'%}
 <div id="content">
     <div class="about-intro fadein">
-        <h1>Using technology should be enjoyable</h1>
-        <p class="motto">My personal motto is that blah blah blah, this continues on, and I say a few more things</p>
+        <h1>We can give people superpowers.</h1>
+        <p class="motto">Great products can take someone totally beyond what they thought they could do, which makes creating them so much fun.</p>
         <p>
-        Outside of work, I enjoy cooking, playing piano and guitar, acting in and directing plays, and practicing aikido.
+        Growing up, I dreamed of becoming a "door-to-door inventor" &mdash; I imagined talking to people about the problems they had and then designing devices to solve them. I never quite shook that dream, and am fortunate that my jouney so far as a software engineer, startup founder, and product manager has let me do this at scale.
         </p>
         <p>
-        Growing up, I wanted to be an inventor. I studied <abbr title="Electrical Engineering and Computer Science">EECS</abbr> at MIT, and in my senior year started a company. That experience led me to being a full-time product manager, but I still do some side projects on the side.
+        Outside of work, I cook, dance, perform theater, hack on a number of side projects, and play piano. Here's an overview of my career and life so far:
         </p>
-    </div>
-    <div class="timeline fadein">
-        <svg width="50" height="1000" viewBox="0 0 50 1000">
-            <pattern id="mitFilepickerHatch" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
-              <line x1="2.5" y1="0" x2="2.5" y2="10" style="stroke:#A31F34; stroke-width:5" />
-              <line x1="7.5" y1="0" x2="7.5" y2="10" style="stroke:#C6579A; stroke-width:5" />
-            </pattern>
-            <pattern id="YCFilepickerHatch" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
-              <line x1="2.5" y1="0" x2="2.5" y2="10" style="stroke:#FF6600; stroke-width:5" />
-              <line x1="7.5" y1="0" x2="7.5" y2="10" style="stroke:#C6579A; stroke-width:5" />
-            </pattern>
-
-            <line x1="24.5" x2="24.5" y1="0" y2="1000" stroke="#666" stroke-width="1"/>
-            <line x1="20" x2="30" y1="10.5" y2="10.5" stroke="#666" stroke-width="1"/>
-            <line x1="20" x2="30" y1="210.5" y2="210.5" stroke="#666" stroke-width="1"/>
-            <line x1="20" x2="30" y1="410.5" y2="410.5" stroke="#666" stroke-width="1"/>
-            <line x1="20" x2="30" y1="610.5" y2="610.5" stroke="#666" stroke-width="1"/>
-            <line x1="20" x2="30" y1="810.5" y2="810.5" stroke="#666" stroke-width="1"/>
-
-            <rect x="25" y="0" width="8" height="160" style="fill: #33CCFF"/>
-            <rect x="25" y="170" width="8" height="370" style="fill: #C6579A"/>
-            <rect x="33" y="470" width="8" height="60" style="fill: #FF6600"/>
-            <rect x="25" y="540" width="8" height="60" style="fill: url(#mitFilepickerHatch)"/>
-            <rect x="25" y="600" width="8" height="400" style="fill: #A31F34"/>
-            <rect x="33" y="680" width="8" height="60" style="fill: #FFA700"/>
-
-            <circle cx="24.5" cy="120" r="6" style="fill: #FFF; stroke:#000; stroke-width:1"/>
-            <circle cx="24.5" cy="160" r="3" style="fill: #FFF; stroke:#000; stroke-width:1"/>
-            <circle cx="24.5" cy="260" r="3" style="fill: #FFF; stroke:#000; stroke-width:1"/>
-            <circle cx="24.5" cy="280" r="3" style="fill: #FFF; stroke:#000; stroke-width:1"/>
-            <circle cx="24.5" cy="380" r="3" style="fill: #FFF; stroke:#000; stroke-width:1"/>
-            <circle cx="24.5" cy="390" r="3" style="fill: #FFF; stroke:#000; stroke-width:1"/>
-        </svg>
     </div>
     <ul class="timeline-entries fadein">
-        <li class="job span large" data-start="5-2014" data-color="33CCFF">
+        <li>
             <h3>Product Manager at IFTTT</h3>
             <time>May 2014 to Present</time>
-            <p class="description">Run a team of 5 PMs and designers charged with identifying, designing, and shipping
-            products on the IFTTT platform that meet business or user needs.</p>
+            <p class="description">I work with a team of 12 fantastic engineers and designers to build and grow IFTTT’s consumer products on iOS, Android, and the web. I head up our product roadmap, growth, metrics &amp; user research, and day-to-day process.</p>
+            <p class="description">As the first product manager, I established the role of product management at IFTTT, and built out the initial team.
+            </p>
             <ul class="highlights">
-                <li>I increase X by over 200%!</li>
-                <li>Transitioned the team to a more data driven culture</li>
-                <li>Trained people about hiring</li>
+                <li>Built out a flagship product from initial conception to public launch.</li>
+                <li>Increased success rate of the web onboarding flow by 43%.</li>
+                <li>Coordinated a major brand update and simultaneous launch of 6 new apps across iOS and Android.</li>
+                <li>Doubled the clickthrough rate and halved the unsubscribe rate of our email engagement efforts.</li>
             </ul>
         </li>
-        <li class="event" data-start="4-2014">
-            <p>October 2014: Spent 9 days backpacking in Japan.</p>
-        </li>
-        <li class="event" data-start="4-2014">
-            <p>April 2014: Ran the Boston Marathon in 4:03.</p>
-        </li>
-        <li class="job span large" data-start="1-2012" data-end="4-2014" data-color="C6579A">
+        <li>
             <h3>Founder and CEO at Filepicker.io</h3>
             <time>January 2012 to April 2014</time>
             <p class="description">
@@ -75,42 +43,14 @@
                 content marketing, and customer support.
             </p>
             <ul class="highlights">
-                <li>Grew the company to 13 people and an AMR of $600,000 with over 1000 customers.</li>
-                <li>Part of the YCombinator batch of Summer 2012, raised 1.8mn from Andreesen Horowitz and other investors.</li>
-                <li>Sold technology and business to Xenon Ventures in spring of 2014</li>
+                <li>Grew the company to 13 people and an AMR of $600,000 with over 1,000 customers.</li>
+                <li>Partipated in the YCombinator batch of Summer 2012.</li>
+                <li>Raised $1.8mn from Andreessen Horowitz and other investors.</li>
+                <li>Reached profitiability in 18 months.</li>
+                <li>Sold to Xenon Ventures in spring of 2014.</li>
             </ul>
         </li>
-        <li class="event" data-start="4-2014">
-            <p>April 2014: Sold Filepicker.io to Xenon Ventures.</p>
-        </li>
-        <li class="event" data-start="3-2014">
-            <p>March 2014: Filepicker.io hits 100 million files uploaded.</p>
-        </li>
-        <li class="event" data-start="10-2013">
-            <p>October 2013: Filepicker.io is profitable.</p>
-        </li>
-        <li class="event" data-start="8-2013">
-            <p>August 2013: Filepicker.io launches the Ink Mobile Framework to bring inter-app communication ("intents") to iOS.</p>
-        </li>
-        <li class="event" data-start="8-2013">
-            <p>August 2013: Filepicker.io identified as one of the top 20 fastest growing developer tools.</p>
-        </li>
-        <li class="event" data-start="9-2012">
-            <p>September 2012: Raised $1.8mn from Andreesen Horowitz, Highland Ventures, SVAngel, and others.</p>
-        </li>
-        <li class="span yc" data-start="6-2012" data-end="8-2012" data-color="FF660A">
-            <p>June to August 2012: Part of the YCombinator class of Summer 2012 with Filepicker.io.</p>
-        </li>
-        <li class="event" data-start="5-2012">
-            <p>May 2012: Graduated from MIT.</p>
-        </li>
-        <li class="event" data-start="5-2012">
-            <p>May 2012: Won the MIT $100k Entrepeneurship Competition.</p>
-        </li>
-        <li class="event" data-start="4-2012">
-            <p>April 2012: Launched Filepicker.io on Hacker News.</p>
-        </li>
-        <li class="span large" data-start="8-2008" data-end="5-2012" data-color="A31F34">
+        <li>
             <h3>S.B. in Computer Science and Electrical Engineering at MIT</h3>
             <time>August 2008 to June 2012</time>
             <p class="description">
@@ -122,18 +62,9 @@
                 <li>Whitelaw Prize for Originality of Design - MIT, 2010</li>
             </ul>
         </li>
-        <li class="job span large" data-start="5-2011" data-end="8-2011" data-color="FFA700">
-            <h3>UX Engineer on Google+</h3>
-            <time>May 2011 to August 2011</time>
-            <p class="description">
-                Worked as an engineering intern on the front-end of Google+ before, during, and after launch.
-            </p>
-            <ul class="highlights">
-                <li>Part of the most important project at Google in 2011</li>
-                <li>Selected as the best intern project</li>
-                <li>Shipped several parts of the product that are still in production</li>
-            </ul>
-        </li>
     </ul>
+    <div class="timeline fadein">
+        <svg id="timeline-graphic" width="200" height="900" viewBox="-100 0 200 900"></svg>
+    </div>
 </div>
 {%endblock%}

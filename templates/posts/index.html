@@ -6,13 +6,15 @@
 <div class="posts-intro">
     <p>
         I write on things that interest me: product management, startups, and general tech trends.
-        If you're looking to get a sense of what I write about, read these posts:
     </p>
+    <!--
+        If you're looking to get a sense of what I write about, read these posts:
     <ol>
         {%for post in top_posts%}
         <li><a href="{{post.get_absolute_url}}">{{post.title}}</a></li>
         {%endfor%}
     </ol>
+    -->
 </div>
 <div class="posts">
     {% for post in posts%}
