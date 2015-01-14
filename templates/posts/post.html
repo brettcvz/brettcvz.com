@@ -3,9 +3,12 @@
 {%block title%}Brett van Zuiden | {{post.title}}{%endblock%}
 
 {%block contentpane%}
-<article>
+<article class="post">
     <h1>{{post.title}}</h1>
     <time class="pubdate" datetime="{{post.pubdate|date:"Y-m-d"}}">{{post.pubdate|date:"F jS, Y"}}</time>
     {{post.content|safe|linebreaks}}
+    {%if perms.posts.can_edit%}
+    <p><a href="/admin/posts/post/{{post.id}}" target="edit_{{post.id}}">Edit Post</a></p>
+    {%endif%}
 </article>
 {%endblock%}

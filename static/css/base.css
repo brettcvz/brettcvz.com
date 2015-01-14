@@ -401,3 +401,48 @@ article p a.readmore {
 }
 
 /*ENDBLOCK About*/
+/*BLOCK Posts*/
+article.post {
+    margin-top: 20px;
+}
+
+article.post h1 {
+    font-weight: 400;
+    margin: 0 0 7px;
+}
+article.post time {
+    margin-bottom: 10px;
+    display: block;
+}
+
+article.post strong {
+    font-weight: 400;
+}
+article.post a {
+    text-decoration: underline;
+    font-family: 'Neuton', serif;
+    font-weight: 200;
+}
+article.post ul, article.post ol {
+    font-family: 'Neuton', serif;
+    font-weight: 200;
+    line-height: 28px;
+    font-size: 18px;
+    margin: 5px 20px;
+    padding: 5px;
+}
+
+article.post ul {
+    list-style-type: circle;
+}
+
+article.post h3 {
+    font-family: 'Neuton', serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+article.post emph {
+    font-style: italic;
+}
+/*ENDBLOCK*/
