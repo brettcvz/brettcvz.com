@@ -6,7 +6,7 @@ import re
 
 class Post(models.Model):
     title = models.CharField(max_length=100)
-    pubdate = models.DateField(auto_now_add=True, editable=False)
+    pubdate = models.DateField(auto_now_add=True, editable=True)
     visible = models.BooleanField(default=True)
     content = models.TextField()
 
