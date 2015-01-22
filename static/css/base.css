@@ -290,6 +290,11 @@ article {
 article h2 {
     margin: 10px 0 5px;
 }
+
+article h2.unpublished a{
+    color: #999;
+}
+
 article time {
     color: #333; 
     font-size: 16px;
@@ -414,6 +419,11 @@ article.post h1 {
     font-weight: 400;
     margin: 0 0 7px;
 }
+
+article.post h1.unpublished {
+    color: #999;
+}
+
 article.post time {
     margin-bottom: 10px;
     display: block;

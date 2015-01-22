@@ -1,4 +1,5 @@
 website/settings_local.py
+staticfiles/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
