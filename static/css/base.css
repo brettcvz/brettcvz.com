@@ -296,7 +296,7 @@ article time {
 }
 article p {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 26px;
     font-family: 'Neuton', serif;
     font-weight: 200;
     margin: 5px 0;
@@ -404,6 +404,10 @@ article p a.readmore {
 /*BLOCK Posts*/
 article.post {
     margin-top: 20px;
+}
+
+article.post p {
+    margin: 15px 0;
 }
 
 article.post h1 {
