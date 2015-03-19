@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", function(){
     //set of events, key is the dot position, value is the text
     //associated with it (optionally with positions)
     var events = {
+        2015.13: {
+            2015.18: "Launched the Do",
+            2015.10: "apps at IFTTT"
+        },
         2014.8: {
             2014.83: "Backpaced for 9",
             2014.75: "days in Japan"
