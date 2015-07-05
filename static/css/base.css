@@ -104,6 +104,8 @@ footer {
 
 .segment a.more {
     font-weight: 400;
+    clear: both;
+    display: block;
 }
 
 .segment h2 {
@@ -160,7 +162,7 @@ footer {
 #top-projects li {
     float: left;
     width: 280px;
-    margin: 0 25px 10px 0;
+    margin: 0 25px 15px 0;
 }
 
 #top-projects h4 {

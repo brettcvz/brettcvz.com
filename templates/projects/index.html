@@ -1,1 +1,24 @@
-{% extends "posts/base.html" %}
+{% extends "splitpane.html" %}
+
+{%block title%}Brett van Zuiden | Projects{%endblock%}
+
+{%block contentpane%}
+<div class="projects-intro">
+    <p>
+        I always have an number of projects that I'm working on, here are some of my favorites.
+    </p>
+</div>
+<div class="projects">
+    {% for project in projects%}
+    <article>
+        <h2 {%if not project.visible%}class="unpublished"{%endif%}>
+            <a href="{{project.get_absolute_url}}">{{project.title}}</a>
+        </h2>
+        <time class="pubdate" datetime="{{project.pubdate|date:"Y-m-d"}}">{{project.pubdate|date:"F jS, Y"}}</time>
+        <p class="preview">
+            <a class="readmore" href="{{project.get_absolute_url}}">Read more &rsaquo;</a>
+        </p>
+    </article>
+    {% endfor %}
+</div>
+{%endblock%}
