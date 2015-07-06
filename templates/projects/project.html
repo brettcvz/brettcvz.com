@@ -6,7 +6,7 @@
 <article class="project">
     <h1 {%if not project.visible%}class="unpublished"{%endif%}>{{project.title}}</h1>
     <time class="pubdate" datetime="{{project.pubdate|date:"Y-m-d"}}">{{project.pubdate|date:"F jS, Y"}}</time>
-    {{project.content|safe|linebreaks}}
+    {{project.content|safe}}
     {%if perms.project.can_edit%}
     <p><a href="/admin/projects/project/{{project.id}}" target="edit_{{project.id}}">Edit Project</a></p>
     {%endif%}

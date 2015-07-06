@@ -45,16 +45,13 @@
             <ul id="top-projects">
                 {%for project in top_projects%}
                 <li class="expanded">
-                    <img src="{{project.image}}">
+                    <a href="{{project.get_absolute_url}}">
+                        <img src="{{project.image}}">
+                    </a>
                     <h4><a href="{{project.get_absolute_url}}">{{project.title}}</a></h4>
                     <p>{{project.tagline}}</p>
                 </li>
                 {%endfor%}
-                <li class="expanded">
-                    <img src="http://placehold.it/280x150">
-                    <h4><a href="#TODO">Personal Dashboard</a></h3>
-                    <p>Timely information made glanceable.</p>
-                </li>
             </ul>
             <a class="more" href="{% url 'projects:index'%}">See all projects &rsaquo;</a>
         </div>

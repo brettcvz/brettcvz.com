@@ -3,9 +3,9 @@
 {%block title%}Brett van Zuiden | Projects{%endblock%}
 
 {%block contentpane%}
-<div class="projects-intro">
+<div class="index-intro">
     <p>
-        I always have an number of projects that I'm working on, here are some of my favorites.
+        I like building all sorts of things, mostly to play around with concepts I think are interesting or solve some small need.
     </p>
 </div>
 <div class="projects">
@@ -16,6 +16,7 @@
         </h2>
         <time class="pubdate" datetime="{{project.pubdate|date:"Y-m-d"}}">{{project.pubdate|date:"F jS, Y"}}</time>
         <p class="preview">
+            {{project.preview_content|safe}}
             <a class="readmore" href="{{project.get_absolute_url}}">Read more &rsaquo;</a>
         </p>
     </article>

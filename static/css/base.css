@@ -175,6 +175,11 @@ footer {
     line-height: 24px
 }
 
+#top-projects img {
+    width: 280px;
+    height: 150px;
+}
+
 #contact a {
     font-weight: 400;
 }
@@ -265,53 +270,6 @@ nav .icon {
 }
 
 /*ENDBLOCK Sidepane*/
-/*BLOCK Posts*/
-.rightpane {
-    margin-top: 40px;
-    width: 525px;
-    display: inline-block;
-}
-.posts-intro {
-    margin-bottom: 40px;
-    font-size: 20px;
-}
-
-.posts-intro ol {
-    margin: 0;
-    padding: 0 25px;
-}
-
-.posts-intro li {
-    margin: 5px 0px;
-    font-size: 18px;
-}
-
-article {
-    margin: 40px 0;
-}
-article h2 {
-    margin: 10px 0 5px;
-}
-
-article h2.unpublished a{
-    color: #999;
-}
-
-article time {
-    color: #333; 
-    font-size: 16px;
-}
-article p {
-    font-size: 18px;
-    line-height: 26px;
-    font-family: 'Neuton', serif;
-    font-weight: 200;
-    margin: 5px 0;
-}
-article p a.readmore {
-    font-size: 16px;
-}
-/*ENDBLOCK Posts*/
 /*BLOCK About*/
 .about-intro h1 {
     margin-top: 10px;
@@ -408,7 +366,71 @@ article p a.readmore {
 }
 
 /*ENDBLOCK About*/
-/*BLOCK Posts*/
+/*BLOCK Posts/Projects Index*/
+.rightpane {
+    margin-top: 40px;
+    width: 525px;
+    display: inline-block;
+}
+.index-intro {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.index-intro ol {
+    margin: 0;
+    padding: 0 25px;
+}
+
+.index-intro li {
+    margin: 5px 0px;
+    font-size: 18px;
+}
+
+article {
+    margin: 40px 0;
+}
+article h2 {
+    margin: 10px 0 5px;
+}
+
+article h2.unpublished a{
+    color: #999;
+}
+
+article time {
+    color: #333; 
+    font-size: 16px;
+}
+article p {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'Neuton', serif;
+    font-weight: 200;
+    margin: 5px 0;
+}
+article p a.link {
+    font-size: 18px;
+    font-family: 'Neuton', serif;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+article p a.readmore {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif
+    font-weight: 400;
+}
+
+article img.half {
+    width:260px;
+}
+
+article img.full {
+    width:500px;
+}
+/*ENDBLOCK Posts/Projects Index*/
+/*BLOCK Post*/
 article.post {
     margin-top: 20px;
 }
@@ -462,3 +484,58 @@ article.post emph {
     font-style: italic;
 }
 /*ENDBLOCK*/
+
+/*BLOCK Project*/
+article.project {
+    margin-top: 20px;
+}
+
+article.project p {
+    margin: 15px 0;
+}
+
+article.project h1 {
+    font-weight: 400;
+    margin: 0 0 7px;
+}
+
+article.project h1.unpublished {
+    color: #999;
+}
+
+article.project time {
+    margin-bottom: 10px;
+    display: block;
+}
+
+article.project strong {
+    font-weight: 400;
+}
+article.project a {
+    text-decoration: underline;
+    font-family: 'Neuton', serif;
+    font-weight: 200;
+}
+article.project ul, article.project ol {
+    font-family: 'Neuton', serif;
+    font-weight: 200;
+    line-height: 28px;
+    font-size: 18px;
+    margin: 5px 20px;
+    padding: 5px;
+}
+
+article.project ul {
+    list-style-type: circle;
+}
+
+article.project h3 {
+    font-family: 'Neuton', serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+article.project emph {
+    font-style: italic;
+}
+/*ENDBLOCK Project*/

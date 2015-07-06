@@ -12,6 +12,7 @@ class Project(models.Model):
     pubdate = models.DateField(auto_now_add=True, editable=True)
     visible = models.BooleanField(default=True)
     content = models.TextField()
+    preview_content = models.TextField()
 
     #Show this project on the homepage
     on_front_page = models.BooleanField(default=False)
