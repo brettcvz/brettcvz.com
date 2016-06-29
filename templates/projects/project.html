@@ -2,6 +2,13 @@
 
 {%block title%}Brett van Zuiden | {{project.title}}{%endblock%}
 
+{%block description%} {{project.tagline}} {%endblock%}
+
+{%block og_tags%}
+<meta name="og:title" content="{{project.title}}" />
+<meta name="og:desription" content="{{project.tagline}}" />
+{%endblock%}
+
 {%block contentpane%}
 <article class="project">
     <h1 {%if not project.visible%}class="unpublished"{%endif%}>{{project.title}}</h1>

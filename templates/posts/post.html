@@ -2,6 +2,13 @@
 
 {%block title%}Brett van Zuiden | {{post.title}}{%endblock%}
 
+{%block description%} {{post.preview|removetags:"strong p a"}} {%endblock%}
+
+{%block og_tags%}
+<meta name="og:title" content="{{post.title}}" />
+<meta name="og:desription" content="{{post.preview|removetags:"strong p a"}}" />
+{%endblock%}
+
 {%block contentpane%}
 <article class="post">
     <h1 {%if not post.visible%}class="unpublished"{%endif%}>{{post.title}}</h1>
