@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //set of events, key is the dot position, value is the text
     //associated with it (optionally with positions)
     var events = {
+        2017.42: "Got engaged",
         2016.5: {
           2016.50: "First time compiling",
           2016.42: "the Linux kernel"
