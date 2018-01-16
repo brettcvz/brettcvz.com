@@ -102,6 +102,10 @@ footer {
     margin: 40px 0;
 }
 
+.segment a {
+  font-weight: 300;
+}
+
 .segment a.more {
     font-weight: 400;
     clear: both;
@@ -113,9 +117,12 @@ footer {
     display: inline-block;
     vertical-align: top;
     margin: 0;
-    padding: 0 5px;
     font-weight: 600;
     line-height: 36px;
+}
+
+.segment h2 a {
+  font-weight: 600;
 }
 
 .segment .details {
@@ -181,7 +188,7 @@ footer {
 }
 
 #contact a {
-    font-weight: 400;
+    font-weight: 300;
 }
 /*ENDBLOCK Homepage*/
 
