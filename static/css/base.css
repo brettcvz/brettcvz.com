@@ -546,3 +546,36 @@ article.project emph {
     font-style: italic;
 }
 /*ENDBLOCK Project*/
+
+/*BLOCK Mobile*/
+@media only screen and (max-width: 50em) {
+  #content {
+    width: 100%;
+  }
+
+  .sidepane, .rightpane {
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+
+  .sidepane {
+    background-color: #F0F0F0;
+    border-bottom: 1px solid #DDD;
+  }
+
+  .sidepane .info, .sidepane .timeline {
+    display: none;
+  }
+
+  .timeline-entries {
+    width: 100%;
+  }
+
+  img, iframe {
+    max-width: 100%;
+  }
+}
+/*ENDBLOCK Mobile*/
