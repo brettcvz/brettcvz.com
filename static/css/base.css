@@ -577,5 +577,30 @@ article.project emph {
   img, iframe {
     max-width: 100%;
   }
+
+  #opener {
+    padding: 0;
+    border-bottom: 1px solid #DDD;
+    background-color: #F0F0F0;
+  }
+
+  #opener .headshot {
+    display: none;
+  }
+
+  #intro {
+    margin: 0;
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .segment {
+    padding: 0 20px;
+    margin: 20px 0;
+  }
+
+  #top-posts li {
+    margin-bottom: 10px;
+  }
 }
 /*ENDBLOCK Mobile*/
