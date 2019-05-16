@@ -40,7 +40,7 @@ The web presence of Brett van Zuiden - posts, projects, and work history.
                 <li>
                     <h3><a href="{{post.get_absolute_url}}">{{post.title}}</a></h3>
                     <p>
-                    {{post.preview|removetags:"strong p a"|safe|truncatechars:400}} <a class="readmore" href="{{post.get_absolute_url}}">&rsaquo;</a>
+                    {{post.clean_preview|safe|truncatechars:400}} <a class="readmore" href="{{post.get_absolute_url}}">&rsaquo;</a>
                     </p>
                 </li>
                 {%endfor%}

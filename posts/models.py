@@ -2,6 +2,7 @@ from django.db import models
 from django.core.urlresolvers import reverse
 import datetime
 import re
+import bleach
 
 
 class Post(models.Model):
@@ -28,6 +29,9 @@ class Post(models.Model):
 
     def preview(self):
         return self.content.partition("\n")[0]
+
+    def clean_preview(self):
+        return bleach.clean(self.preview(), strip=True)
 
     def get_absolute_url(self):
         return reverse("posts:post", kwargs={'post_id': str(self.id)}) + "-" + self.title_slug()
