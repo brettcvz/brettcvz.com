@@ -1,5 +1,6 @@
 website/settings_local.py
 staticfiles/
+.env
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
