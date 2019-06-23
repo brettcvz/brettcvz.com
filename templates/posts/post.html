@@ -2,11 +2,11 @@
 
 {%block title%}Brett van Zuiden | {{post.title}}{%endblock%}
 
-{%block description%} {{post.preview|removetags:"strong p a"}} {%endblock%}
+{%block description%} {{post.clean_preview}} {%endblock%}
 
 {%block og_tags%}
 <meta name="og:title" content="{{post.title}}" />
-<meta name="og:desription" content="{{post.preview|removetags:"strong p a"}}" />
+<meta name="og:desription" content="{{post.preview}}" />
 {%endblock%}
 
 {%block contentpane%}
