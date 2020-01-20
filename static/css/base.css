@@ -490,6 +490,20 @@ article.post h3 {
 article.post emph {
     font-style: italic;
 }
+
+.subscribe, .feedback {
+  font-size: 20px;
+}
+.subscribe a, .feedback a {
+  font-weight: 300;
+  color: #0CA5B0;
+}
+.subscribe a:hover, .feedback a:hover { font-weight: 400; }
+.subscribe a svg {
+  margin-left: -3px;
+}
+
+
 /*ENDBLOCK*/
 
 /*BLOCK Project*/

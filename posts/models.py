@@ -16,6 +16,8 @@ class Post(models.Model):
     #Show this post as a "top post"
     top_post = models.BooleanField(default=False)
 
+    hacker_news_link = models.URLField(blank=True)
+
     class Meta:
         ordering = ['-pubdate']
 
