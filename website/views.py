@@ -13,3 +13,6 @@ def home(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def favorites(request):
+    return render(request, 'favorites.html')

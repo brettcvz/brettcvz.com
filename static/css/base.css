@@ -394,6 +394,15 @@ nav .icon {
     font-size: 18px;
 }
 
+.index-intro a {
+  font-weight: 300;
+  color: #0CA5B0;
+}
+
+.index-intro a:hover { 
+  font-weight: 400;
+}
+
 article {
     margin: 40px 0;
 }
@@ -498,6 +507,7 @@ article.post emph {
   font-weight: 300;
   color: #0CA5B0;
 }
+
 .subscribe a:hover, .feedback a:hover { font-weight: 400; }
 .subscribe a svg {
   margin-left: -3px;

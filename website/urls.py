@@ -10,6 +10,7 @@ urlpatterns = [
     # Examples:
     url(r'^$', views.home, name='home'),
     url(r'^about/$', views.about, name='about'),
+    url(r'^favorites/$', views.favorites, name='favorites'),
     url(r'^posts/', include('posts.urls', namespace='posts')),
     url(r'^projects/', include('projects.urls', namespace='projects')),
 
