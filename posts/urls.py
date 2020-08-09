@@ -1,10 +1,12 @@
-from django.conf.urls import url
+from django.urls import path, re_path
 
-import views
-import feed
+from . import views
+from . import feed
+
+app_name = "posts"
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
-    url(r'^rss$', feed.LatestPostsFeed(), name='rss'),
-    url(r'^(?P<post_id>\d+)[-\w]*$', views.post, name='post'),
+    path('', views.index, name='index'),
+    path('rss', feed.LatestPostsFeed(), name='rss'),
+    re_path(r'^(?P<post_id>\d+)[-\w]*$', views.post, name='post'),
 ]

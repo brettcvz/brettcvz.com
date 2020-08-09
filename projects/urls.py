@@ -1,8 +1,10 @@
-from django.conf.urls import url
+from django.urls import path, re_path
 
-import views
+from . import views
+
+app_name = "projects"
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
-    url(r'^(?P<project_id>\d+)[-\w]*$', views.project, name='project'),
+    path('', views.index, name='index'),
+    re_path(r'^(?P<project_id>\d+)[-\w]*$', views.project, name='project'),
 ]
