@@ -7,6 +7,8 @@
 {%block og_tags%}
 <meta name="og:title" content="{{project.title}}" />
 <meta name="og:desription" content="{{project.tagline}}" />
+<meta name="og:url" content="https://brettcvz.com{{project.get_absolute_url}}" />
+<meta name="og:image" content="{{project.image}}" />
 {%endblock%}
 
 {%block contentpane%}
