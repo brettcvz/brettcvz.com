@@ -52,7 +52,7 @@
         </h2>
         <time class="pubdate" datetime="{{post.pubdate|date:"Y-m-d"}}">{{post.pubdate|date:"F jS, Y"}}</time>
         <p class="preview">
-        {{post.clean_preview|safe|truncatechars:400}} <a class="readmore" href="{{post.get_absolute_url}}">Read more &rsaquo;</a>
+        {{post.clean_preview|safe}} <a class="readmore" href="{{post.get_absolute_url}}">Read more &rsaquo;</a>
         </p>
     </article>
     {% endfor %}
