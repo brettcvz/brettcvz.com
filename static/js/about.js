@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function(){
     var events = {
         2021.8: "Started sewing",
         2021.4: {
-          2021.45: "Bought our first",
-          2021.37: "home in Oakland, CA",
+          2021.4: "Bought our first",
+          2021.32: "home in Oakland, CA",
         },
         2021.1: "Learned to surf",
         2020.65: {
