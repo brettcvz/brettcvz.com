@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", function(){
     //set of events, key is the dot position, value is the text
     //associated with it (optionally with positions)
     var events = {
+        2022.45: {
+          2022.45: "Lived in Paris",
+          2022.37: "for 1 month",
+        },
+        2022.15: "My son was born!",
         2021.8: "Started sewing",
         2021.4: {
           2021.4: "Bought our first",
