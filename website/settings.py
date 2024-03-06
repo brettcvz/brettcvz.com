@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 SECRET_KEY = os.getenv("DJANGO_SECRET")
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
