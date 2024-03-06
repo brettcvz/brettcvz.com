@@ -2,7 +2,7 @@ from django.db import models
 from django.urls import reverse
 import datetime
 import re
-import bleach
+import nh3
 
 
 class Post(models.Model):
@@ -33,7 +33,7 @@ class Post(models.Model):
         return self.content.partition("\n")[0]
 
     def clean_preview(self):
-        return bleach.clean(self.preview(), strip=True)
+        return nh3.clean(self.preview(), strip=True)
 
     def get_absolute_url(self):
         return reverse("posts:post", kwargs={'post_id': str(self.id)}) + "-" + self.title_slug()
