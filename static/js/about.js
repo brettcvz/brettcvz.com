@@ -10,9 +10,10 @@ document.addEventListener("DOMContentLoaded", function(){
     //associated with it (optionally with positions)
     var events = {
         2023.85: "Started learning Japanese",
+        2023.6: "Joined the EBIA Board",
         2023.35: {
-          2022.35: "Finished biking the",
-          2022.27: "full CA coastline",
+          2023.35: "Finished biking the",
+          2023.27: "full CA coastline",
         },
         2022.45: {
           2022.45: "Lived in Paris",
