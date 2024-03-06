@@ -1,4 +1,4 @@
-nh3==0.2.15
+bleach==6.1.0
 dj-database-url==2.1.0
 Django==5.0.3
 gunicorn==21.2.0
